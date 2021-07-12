@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora" >
+            <div class="painel">
+                <button id="historico" onclick="capturarResultadoDoHistorico()" ></button>
+                <input type="text" id="resultado" value="" onkeyup="validarInput()">
+            </div>
+            <div class="content">
+                <button class="operacaoAvancada" onclick="zerar()" >AC</button>
+                <button class="operacaoAvancada" onclick="inverter()">+/-</button>
+                <button class="operacaoAvancada" onclick="escolherOperacao('%')" >%</button>
+                <button class="operacaoSimples" onclick="escolherOperacao('/')" >/</button>
+                <button class="numeros" onclick="selecionarNumero(7)" >7</button>
+                <button class="numeros" onclick="selecionarNumero(8)" >8</button>
+                <button class="numeros" onclick="selecionarNumero(9)" >9</button>
+                <button class="operacaoSimples" onclick="escolherOperacao('*')" >x</button>
+                <button class="numeros" onclick="selecionarNumero(4)" >4</button>
+                <button class="numeros" onclick="selecionarNumero(5)" >5</button>
+                <button class="numeros" onclick="selecionarNumero(6)" >6</button>
+                <button class="operacaoSimples" onclick="escolherOperacao('-')" >-</button>
+                <button class="numeros" onclick="selecionarNumero(1)" >1</button>
+                <button class="numeros" onclick="selecionarNumero(2)" >2</button>
+                <button class="numeros" onclick="selecionarNumero(3)" >3</button>
+                <button class="operacaoSimples" onclick="escolherOperacao('+')">+</button>
+                <button class="numero0" onclick="selecionarNumero('0')" >0</button>
+                <button class="numeros" onclick="selecionarNumero('.')" >.</button>
+                <button class="operacaoSimples" onclick="efetuarCalculo()" >=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

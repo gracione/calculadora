@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+}
+.calculadora{
+    width: 300px;
+    height: 500px;
+}
+.container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.painel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    width: 300px;
+    height: 30%;
+    background-color: black;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    width: 300px;
+    height: 350px;
+    background-color: black;
+}
+.content button{
+    font-weight:normal;
+    border-radius: 65px;
+    border:none;
+    font-size: 25px;
+
+}
+.numero0{
+    width: 145px;
+    height: 65px;
+    background-color: #343135;
+    color: white;
+}
+.numeros{
+    width: 65px;
+    height: 65px;
+    background-color: #343135;
+    color: white;
+}
+
+.operacaoSimples{
+    width: 65px;
+    height: 65px;
+    color: white;
+    background-color: orange;
+}
+.operacaoAvancada{
+    width: 65px;
+    height: 65px;
+    background-color: white;
+}
+
+
+#resultado{
+   /* padding: 5px;*/
+    
+    text-align: end;
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 60px;
+}
+#historico{
+    text-align: end;
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
